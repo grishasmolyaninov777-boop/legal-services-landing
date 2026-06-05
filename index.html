@@ -6,7 +6,7 @@
     <title>Адвокатская практика | Юридическая помощь</title>
     <meta
       name="description"
-      content="Премиальная юридическая помощь: консультации, правовая стратегия, кейсы, документы об образовании и быстрый контакт через WhatsApp или Telegram."
+      content="Премиальная юридическая помощь: практика, кейсы, стоимость консультации, документы об образовании и быстрый контакт."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,60 +43,64 @@
 
     <main id="top">
       <section class="hero">
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           <h1>Юридическая помощь<br />для сложных ситуаций</h1>
           <p>
             Конфиденциальная консультация и продуманная правовая стратегия для защиты
             ваших интересов.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacts">Получить консультацию</a>
+            <button class="btn btn-primary" type="button" data-modal-open>Получить консультацию</button>
             <a class="btn btn-outline" href="https://wa.me/74951234567" target="_blank" rel="noreferrer">
-              <span class="wa-dot" aria-hidden="true">◌</span>
+              <span class="wa-icon" aria-hidden="true">◌</span>
               Написать в WhatsApp
             </a>
           </div>
         </div>
+
+        <div class="hero-scene reveal" aria-hidden="true">
+          <img src="legal-assets/hero-legal.png" alt="" />
+        </div>
       </section>
 
       <section class="section practice-section" id="practice">
-        <div class="section-title">
+        <div class="section-title reveal">
           <h2>Направления практики</h2>
           <span></span>
         </div>
 
         <div class="practice-grid">
-          <article class="practice-card">
+          <article class="practice-card reveal">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M21 22v-6h22v6M16 22h32v24H16zM16 30h32M29 34h6" />
             </svg>
             <h3>Бизнес и договоры</h3>
           </article>
-          <article class="practice-card">
+          <article class="practice-card reveal">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M32 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM19 53v-7a13 13 0 0 1 26 0v7M13 32a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM7 53v-5a10 10 0 0 1 10-10M51 32a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM57 53v-5a10 10 0 0 0-10-10" />
             </svg>
             <h3>Семейные споры</h3>
           </article>
-          <article class="practice-card">
+          <article class="practice-card reveal">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M13 54V18h19v36M32 28h19v26M20 27h5M20 38h5M39 37h5M39 47h5" />
             </svg>
             <h3>Недвижимость</h3>
           </article>
-          <article class="practice-card">
+          <article class="practice-card reveal">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="m22 14 24 24M17 19l10-10 8 8-10 10zM37 39l10-10 8 8-10 10zM9 53h28M17 45h12" />
             </svg>
             <h3>Арбитраж</h3>
           </article>
-          <article class="practice-card">
+          <article class="practice-card reveal">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M18 10h25l7 7v37H18zM43 10v8h7M25 26h16M25 35h12M34 44l4 4 8-10" />
             </svg>
             <h3>Наследство</h3>
           </article>
-          <article class="practice-card">
+          <article class="practice-card reveal">
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M32 8 14 16v13c0 12 7.2 22 18 27 10.8-5 18-15 18-27V16zM24 32l6 6 12-14" />
             </svg>
@@ -106,25 +110,25 @@
       </section>
 
       <section class="section dark-section" id="cases">
-        <div class="section-title inverse">
+        <div class="section-title inverse reveal">
           <h2>Кейсы и результаты</h2>
           <span></span>
         </div>
 
         <div class="case-grid">
-          <article class="case-card">
+          <article class="case-card reveal">
             <img src="legal-assets/case-negotiation.png" alt="Переговоры по спору" />
             <h3>Спор между поставщиком и покупателем на 12 млн ₽ по договору поставки.</h3>
             <p>Провели переговоры и подготовили правовую позицию, что позволило урегулировать спор без обращения в суд.</p>
             <strong>Досудебное урегулирование</strong>
           </article>
-          <article class="case-card">
+          <article class="case-card reveal">
             <img src="legal-assets/case-business.png" alt="Офисное здание" />
             <h3>Защита бизнеса при претензиях контролирующих органов.</h3>
             <p>Обжаловали незаконные действия, отменили начисления и сохранили активы компании.</p>
             <strong>Сохранены активы</strong>
           </article>
-          <article class="case-card">
+          <article class="case-card reveal">
             <img src="legal-assets/case-documents.png" alt="Юридический документ и перо" />
             <h3>Комплексный аудит договоров и корпоративных документов.</h3>
             <p>Выявили риски, обновили документы и внедрили защитные механизмы для снижения будущих рисков.</p>
@@ -134,13 +138,13 @@
       </section>
 
       <section class="section price-section" id="price">
-        <div class="section-title">
+        <div class="section-title reveal">
           <h2>Стоимость консультации</h2>
           <span></span>
         </div>
 
         <div class="price-grid">
-          <article class="price-card">
+          <article class="price-card reveal">
             <span class="round-icon">▤</span>
             <h3>Первичный разбор</h3>
             <b>5 000 ₽</b>
@@ -151,7 +155,7 @@
             </ul>
             <em>Конфиденциально</em>
           </article>
-          <article class="price-card accent">
+          <article class="price-card accent reveal">
             <span class="round-icon">♞</span>
             <h3>Стратегия по делу</h3>
             <b>15 000 ₽</b>
@@ -162,7 +166,7 @@
             </ul>
             <em>Письменно</em>
           </article>
-          <article class="price-card">
+          <article class="price-card reveal">
             <span class="round-icon">▣</span>
             <h3>Сопровождение</h3>
             <b class="small">по договоренности</b>
@@ -177,39 +181,39 @@
       </section>
 
       <section class="section docs-contact-section" id="documents">
-        <div class="section-title inverse">
+        <div class="section-title inverse reveal">
           <h2>Образование и документы</h2>
           <span></span>
         </div>
 
         <div class="docs-grid">
-          <article>
+          <article class="reveal">
             <img src="legal-assets/document-diploma.png" alt="Диплом о высшем образовании" />
             <p>Диплом о высшем юридическом образовании</p>
           </article>
-          <article>
+          <article class="reveal">
             <img src="legal-assets/document-id.png" alt="Адвокатское удостоверение" />
             <p>Адвокатское удостоверение</p>
           </article>
-          <article>
+          <article class="reveal">
             <img src="legal-assets/document-certificate.png" alt="Сертификат повышения квалификации" />
             <p>Повышение квалификации</p>
           </article>
         </div>
 
-        <div class="stats">
+        <div class="stats reveal">
           <div><span>12+</span><p>лет<br />практики</p></div>
           <div><span>300+</span><p>консультаций</p></div>
           <div><span>⚖</span><p>суды и<br />переговоры</p></div>
         </div>
 
-        <div class="section-title inverse contact-title" id="contacts">
+        <div class="section-title inverse contact-title reveal" id="contacts">
           <h2>Опишите вашу ситуацию</h2>
           <span></span>
         </div>
 
         <div class="contact-grid">
-          <form class="contact-form" data-contact-form>
+          <form class="contact-form reveal" data-contact-form>
             <input type="text" name="name" placeholder="Имя" required />
             <input type="tel" name="phone" placeholder="Телефон" required />
             <textarea name="message" rows="4" placeholder="Кратко о ситуации"></textarea>
@@ -217,16 +221,35 @@
             <p>Ваши данные защищены и не передаются третьим лицам</p>
           </form>
 
-          <aside class="quick-contact">
+          <aside class="quick-contact reveal">
             <h3>Быстрый способ связи</h3>
             <a class="contact-link whatsapp" href="https://wa.me/74951234567" target="_blank" rel="noreferrer">WhatsApp</a>
             <a class="contact-link telegram" href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
-            <a class="contact-link phone" href="tel:+74951234567">+7 (495) 123-45-67 <small>Ежедневно с 10:00 до 20:00</small></a>
+            <a class="contact-link phone" href="tel:+74951234567">
+              +7 (495) 123-45-67
+              <small>Ежедневно с 10:00 до 20:00</small>
+            </a>
             <p>Отвечаю лично. Конфиденциально.</p>
           </aside>
         </div>
       </section>
     </main>
+
+    <div class="modal" data-modal aria-hidden="true">
+      <div class="modal-backdrop" data-modal-close></div>
+      <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-modal-close aria-label="Закрыть форму">×</button>
+        <p class="modal-kicker">Запись на консультацию</p>
+        <h2 id="modal-title">Оставьте контакты, и вам перезвонят</h2>
+        <p class="modal-note">Обычно отвечаю лично в течение рабочего дня. Данные остаются конфиденциальными.</p>
+        <form class="modal-form" data-modal-form>
+          <input type="text" name="modal-name" placeholder="Имя" required />
+          <input type="tel" name="modal-phone" placeholder="Телефон" required />
+          <textarea name="modal-message" rows="4" placeholder="Кратко опишите ситуацию"></textarea>
+          <button class="btn btn-primary" type="submit">Записаться на консультацию</button>
+        </form>
+      </section>
+    </div>
 
     <script src="script.js"></script>
   </body>
