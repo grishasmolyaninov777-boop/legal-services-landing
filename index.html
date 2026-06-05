@@ -1,40 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Адвокатская практика | Юридическая помощь</title>
+    <title>VIP Detailing | Премиальный детейлинг в Москве</title>
     <meta
       name="description"
-      content="Премиальная юридическая помощь: практика, кейсы, стоимость консультации, документы об образовании и быстрый контакт."
+      content="Премиальный детейлинг автомобилей в Москве: керамика, полировка, PPF, химчистка, уход за салоном и дисками. Запись онлайн, гарантия качества, VIP-подход."
     />
+    <meta property="og:title" content="VIP Detailing | Премиальный детейлинг в Москве" />
+    <meta
+      property="og:description"
+      content="Профессиональный уход и безупречный блеск для вашего автомобиля. Запишитесь онлайн за пару кликов."
+    />
+    <meta property="og:image" content="vip-assets/vip-hero.png" />
+    <meta name="theme-color" content="#050505" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar" data-header>
-      <a class="brand" href="#top" aria-label="Адвокатская практика">
-        <span class="brand-icon" aria-hidden="true">
-          <svg viewBox="0 0 54 54">
-            <path d="M27 4 9 11v13c0 11.8 7.2 22 18 26 10.8-4 18-14.2 18-26V11L27 4Z" />
-            <path d="M17 21h20M21 21v15M27 16v5M33 21v15M19 36h16" />
-          </svg>
-        </span>
-        <span>Адвокатская<br />практика</span>
+    <div class="scroll-progress" data-scroll-progress></div>
+    <div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="VIP Detailing">
+        <span class="brand-mark">VIP</span>
+        <span class="brand-caption">Detailing</span>
       </a>
 
-      <nav class="main-nav" aria-label="Навигация">
-        <a href="#practice">Практика</a>
-        <a href="#cases">Кейсы</a>
+      <nav class="main-nav" aria-label="Главная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#advantages">Преимущества</a>
         <a href="#reviews">Отзывы</a>
-        <a href="#price">Стоимость</a>
         <a href="#contacts">Контакты</a>
       </nav>
+
+      <div class="header-contact">
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <span>Ежедневно 9:00 - 21:00</span>
+      </div>
+
+      <button class="header-cta magnetic" type="button" data-modal-open data-magnetic>
+        <i data-lucide="calendar-days" aria-hidden="true"></i>
+        Записаться онлайн
+      </button>
 
       <button class="menu-toggle" type="button" data-menu-toggle aria-label="Открыть меню">
         <span></span>
@@ -43,259 +58,460 @@
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy reveal">
-          <h1>Юридическая помощь<br />для сложных ситуаций</h1>
-          <p>
-            Конфиденциальная консультация и продуманная правовая стратегия для защиты
-            ваших интересов.
-          </p>
-          <div class="hero-actions">
-            <button class="btn btn-primary" type="button" data-modal-open>Получить консультацию</button>
-            <a class="btn btn-outline" href="https://wa.me/74951234567" target="_blank" rel="noreferrer">
-              <span class="wa-icon" aria-hidden="true">◌</span>
-              Написать в WhatsApp
-            </a>
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="ambient-image hero-image" data-parallax data-speed="-0.14"></div>
+        <div class="light-beam beam-one"></div>
+        <div class="light-beam beam-two"></div>
+
+        <div class="hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">VIP Detailing Moscow</p>
+            <h1 id="hero-title">
+              Премиальный детейлинг
+              <span>в Москве</span>
+            </h1>
+            <p class="lead">
+              Профессиональный уход, глубокий блеск и защита кузова для автомобилей, где важна каждая деталь.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary magnetic" type="button" data-modal-open data-magnetic>
+                Записаться онлайн
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </button>
+              <a class="btn btn-ghost magnetic" href="#services" data-scroll-target data-magnetic>
+                Смотреть услуги
+              </a>
+            </div>
           </div>
 
-          <form class="hero-callback" data-hero-form>
-            <div>
-              <strong>Хотите, мы вам перезвоним?</strong>
-              <span>Оставьте имя и телефон, я свяжусь с вами для записи на консультацию.</span>
-            </div>
+          <form class="hero-form glass-card reveal" data-booking-form>
+            <p class="form-title">Записаться онлайн</p>
+            <p class="form-note">Оставьте заявку, и мы подберем лучшее решение для вашего авто.</p>
             <label>
               <span>Имя</span>
-              <input type="text" name="hero-name" placeholder="Ваше имя" required />
+              <input type="text" name="name" placeholder="Ваше имя" required />
             </label>
             <label>
               <span>Телефон</span>
-              <input type="tel" name="hero-phone" placeholder="+7 (___) ___-__-__" required />
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
             </label>
-            <button class="btn btn-callback" type="submit">Перезвоните мне</button>
+            <button class="btn btn-primary magnetic" type="submit" data-magnetic>
+              Отправить заявку
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </button>
+            <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small>
           </form>
         </div>
-      </section>
 
-      <section class="section practice-section" id="practice">
-        <div class="section-title reveal">
-          <h2>Направления практики</h2>
-          <span></span>
-        </div>
-
-        <div class="practice-grid">
-          <article class="practice-card reveal">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M21 22v-6h22v6M16 22h32v24H16zM16 30h32M29 34h6" />
-            </svg>
-            <h3>Бизнес и договоры</h3>
-          </article>
-          <article class="practice-card reveal">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M32 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM19 53v-7a13 13 0 0 1 26 0v7M13 32a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM7 53v-5a10 10 0 0 1 10-10M51 32a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM57 53v-5a10 10 0 0 0-10-10" />
-            </svg>
-            <h3>Семейные споры</h3>
-          </article>
-          <article class="practice-card reveal">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M13 54V18h19v36M32 28h19v26M20 27h5M20 38h5M39 37h5M39 47h5" />
-            </svg>
-            <h3>Недвижимость</h3>
-          </article>
-          <article class="practice-card reveal">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <path d="m22 14 24 24M17 19l10-10 8 8-10 10zM37 39l10-10 8 8-10 10zM9 53h28M17 45h12" />
-            </svg>
-            <h3>Арбитраж</h3>
-          </article>
-          <article class="practice-card reveal">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M18 10h25l7 7v37H18zM43 10v8h7M25 26h16M25 35h12M34 44l4 4 8-10" />
-            </svg>
-            <h3>Наследство</h3>
-          </article>
-          <article class="practice-card reveal">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M32 8 14 16v13c0 12 7.2 22 18 27 10.8-5 18-15 18-27V16zM24 32l6 6 12-14" />
-            </svg>
-            <h3>Защита прав</h3>
-          </article>
+        <div class="hero-stats reveal">
+          <div>
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            <strong data-count="10">0</strong>
+            <span>лет опыта</span>
+          </div>
+          <div>
+            <i data-lucide="users-round" aria-hidden="true"></i>
+            <strong data-count="5000">0</strong>
+            <span>довольных клиентов</span>
+          </div>
+          <div>
+            <i data-lucide="gem" aria-hidden="true"></i>
+            <strong>100%</strong>
+            <span>гарантия качества</span>
+          </div>
+          <div>
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            <strong>Премиум</strong>
+            <span>материалы и оборудование</span>
+          </div>
         </div>
       </section>
 
-      <section class="section dark-section" id="cases">
-        <div class="section-title inverse reveal">
-          <h2>Кейсы и результаты</h2>
-          <span></span>
+      <section class="services section-shell" id="services" aria-labelledby="services-title">
+        <div class="section-media section-media-right" data-parallax data-speed="-0.08">
+          <img src="vip-assets/vip-services.png" alt="Черный спорткар в неоновом свете" />
         </div>
 
-        <div class="case-grid">
-          <article class="case-card reveal">
-            <img src="legal-assets/case-negotiation.png" alt="Переговоры по спору" />
-            <h3>Спор между поставщиком и покупателем на 12 млн ₽ по договору поставки.</h3>
-            <p>Провели переговоры и подготовили правовую позицию, что позволило урегулировать спор без обращения в суд.</p>
-            <strong>Досудебное урегулирование</strong>
-          </article>
-          <article class="case-card reveal">
-            <img src="legal-assets/case-business.png" alt="Офисное здание" />
-            <h3>Защита бизнеса при претензиях контролирующих органов.</h3>
-            <p>Обжаловали незаконные действия, отменили начисления и сохранили активы компании.</p>
-            <strong>Сохранены активы</strong>
-          </article>
-          <article class="case-card reveal">
-            <img src="legal-assets/case-documents.png" alt="Юридический документ и перо" />
-            <h3>Комплексный аудит договоров и корпоративных документов.</h3>
-            <p>Выявили риски, обновили документы и внедрили защитные механизмы для снижения будущих рисков.</p>
-            <strong>Снижены риски</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section reviews-section" id="reviews">
-        <div class="section-title reveal">
-          <h2>Отзывы клиентов</h2>
-          <span></span>
-          <p>Живые сообщения после консультаций: без лишней воды, спокойно и по делу.</p>
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">Наши услуги и пакеты</p>
+            <h2 id="services-title">Детейлинг, который видно с первого взгляда</h2>
+            <p>
+              Подбираем комплекс под состояние автомобиля: от деликатной мойки до полной защиты кузова.
+            </p>
+          </div>
         </div>
 
-        <div class="reviews-grid">
-          <article class="review-card reveal">
-            <img src="legal-assets/review-alexey-morozov.jpg" alt="Отзыв клиента в мессенджере: стало спокойнее после консультации" />
-            <div>
-              <strong>Договор и претензия</strong>
-              <p>Клиент понял, какие документы подготовить и что делать дальше.</p>
+        <div class="service-grid">
+          <article class="service-card reveal" data-tilt-card>
+            <img src="vip-assets/vip-services.png" alt="Премиальная мойка автомобиля" />
+            <div class="service-body">
+              <i data-lucide="droplets" aria-hidden="true"></i>
+              <h3>Мойка и уход</h3>
+              <p>Деликатная мойка кузова, дисков, арок и уход за салоном.</p>
+              <strong>от 7 900 ₽</strong>
             </div>
           </article>
-          <article class="review-card reveal">
-            <img src="legal-assets/review-alexey-smirnov.jpg" alt="Отзыв клиента в мессенджере по вопросу наследства" />
-            <div>
-              <strong>Вопрос наследства</strong>
-              <p>После консультации появился четкий план действий.</p>
+          <article class="service-card reveal" data-tilt-card>
+            <img src="vip-assets/vip-booking.png" alt="Полировка кузова премиального авто" />
+            <div class="service-body">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <h3>Полировка кузова</h3>
+              <p>Убираем микроцарапины и возвращаем глубокий зеркальный блеск.</p>
+              <strong>от 14 900 ₽</strong>
             </div>
           </article>
-          <article class="review-card reveal">
-            <img src="legal-assets/review-consultant.jpg" alt="Отзыв клиента в мессенджере о правовой консультации" />
-            <div>
-              <strong>Правовая консультация</strong>
-              <p>Объяснили спокойно, понятно и по существу вопроса.</p>
+          <article class="service-card reveal" data-tilt-card>
+            <img src="vip-assets/vip-advantages.png" alt="Защитное покрытие кузова" />
+            <div class="service-body">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              <h3>Керамическое покрытие</h3>
+              <p>Гидрофобная защита до 2 лет и насыщенный блеск лакокрасочного покрытия.</p>
+              <strong>от 29 900 ₽</strong>
+            </div>
+          </article>
+          <article class="service-card reveal" data-tilt-card>
+            <img src="vip-assets/vip-contacts.png" alt="Антигравийная защита автомобиля" />
+            <div class="service-body">
+              <i data-lucide="badge-check" aria-hidden="true"></i>
+              <h3>PPF защита</h3>
+              <p>Бронирование кузова антигравийной пленкой для максимальной защиты.</p>
+              <strong>от 59 900 ₽</strong>
+            </div>
+          </article>
+          <article class="service-card reveal" data-tilt-card>
+            <img src="vip-assets/vip-reviews.png" alt="Химчистка премиального салона" />
+            <div class="service-body">
+              <i data-lucide="armchair" aria-hidden="true"></i>
+              <h3>Химчистка салона</h3>
+              <p>Глубокая очистка кожи, текстиля, пластика и устранение запахов.</p>
+              <strong>от 12 900 ₽</strong>
+            </div>
+          </article>
+          <article class="service-card reveal" data-tilt-card>
+            <img src="vip-assets/vip-hero.png" alt="Детейлинг колес и дисков" />
+            <div class="service-body">
+              <i data-lucide="circle-dot" aria-hidden="true"></i>
+              <h3>Детейлинг дисков</h3>
+              <p>Очистка, восстановление и защита керамическим составом.</p>
+              <strong>от 7 900 ₽</strong>
             </div>
           </article>
         </div>
-      </section>
 
-      <section class="section price-section" id="price">
-        <div class="section-title reveal">
-          <h2>Стоимость консультации</h2>
-          <span></span>
-        </div>
-
-        <div class="price-grid">
-          <article class="price-card reveal">
-            <span class="round-icon">▤</span>
-            <h3>Первичный разбор</h3>
-            <b>5 000 ₽</b>
-            <ul>
-              <li>Анализ ситуации и документов</li>
-              <li>Выявление рисков и перспектив</li>
-              <li>Рекомендации по действиям</li>
-            </ul>
-            <em>Конфиденциально</em>
-          </article>
-          <article class="price-card accent reveal">
-            <span class="round-icon">♞</span>
-            <h3>Стратегия по делу</h3>
-            <b>15 000 ₽</b>
-            <ul>
-              <li>Правовая стратегия и план действий</li>
-              <li>Анализ рисков и альтернатив</li>
-              <li>Письменное заключение</li>
-            </ul>
-            <em>Письменно</em>
-          </article>
-          <article class="price-card reveal">
-            <span class="round-icon">▣</span>
-            <h3>Сопровождение</h3>
-            <b class="small">по договоренности</b>
-            <ul>
-              <li>Полное сопровождение дела</li>
-              <li>Представительство и переговоры</li>
-              <li>Контроль результата</li>
-            </ul>
-            <em>Онлайн или офис</em>
-          </article>
+        <div class="center-actions reveal">
+          <button class="btn btn-primary magnetic" type="button" data-modal-open data-magnetic>
+            Смотреть все услуги
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </button>
         </div>
       </section>
 
-      <section class="section docs-contact-section" id="documents">
-        <div class="section-title inverse reveal">
-          <h2>Образование и документы</h2>
-          <span></span>
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <div class="ambient-image about-image" data-parallax data-speed="-0.1"></div>
+        <div class="section-heading split reveal">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow">Почему выбирают нас</p>
+            <h2 id="about-title">Премиальный уровень ухода для вашего автомобиля</h2>
+            <p>
+              Мы сочетаем опыт мастеров, сертифицированную химию и спокойный сервис без суеты.
+              Машину принимаем, ведем по этапам и выдаем в состоянии, которое приятно рассматривать.
+            </p>
+          </div>
         </div>
 
-        <div class="docs-grid">
-          <article class="reveal">
-            <img src="legal-assets/document-diploma.png" alt="Диплом о высшем образовании" />
-            <p>Диплом о высшем юридическом образовании</p>
+        <div class="feature-grid" id="advantages">
+          <article class="feature-card reveal" data-tilt-card>
+            <i data-lucide="gem" aria-hidden="true"></i>
+            <h3>Премиальные материалы</h3>
+            <p>Работаем с проверенными составами и оборудованием мировых брендов.</p>
           </article>
-          <article class="reveal">
-            <img src="legal-assets/document-id.png" alt="Адвокатское удостоверение" />
-            <p>Адвокатское удостоверение</p>
+          <article class="feature-card reveal" data-tilt-card>
+            <i data-lucide="user-check" aria-hidden="true"></i>
+            <h3>Опытные мастера</h3>
+            <p>Каждый этап выполняют специалисты с опытом работы с премиум-классом.</p>
           </article>
-          <article class="reveal">
-            <img src="legal-assets/document-certificate.png" alt="Сертификат повышения квалификации" />
-            <p>Повышение квалификации</p>
+          <article class="feature-card reveal" data-tilt-card>
+            <i data-lucide="star" aria-hidden="true"></i>
+            <h3>Индивидуальный подход</h3>
+            <p>Учитываем состояние авто, задачи владельца и желаемый уровень защиты.</p>
+          </article>
+          <article class="feature-card reveal" data-tilt-card>
+            <i data-lucide="shield" aria-hidden="true"></i>
+            <h3>Гарантия результата</h3>
+            <p>Даем понятные рекомендации по уходу и фиксируем результат после выдачи.</p>
+          </article>
+          <article class="feature-card reveal" data-tilt-card>
+            <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+            <h3>Безопасность</h3>
+            <p>Берегем автомобиль и пространство вокруг него на каждом этапе работ.</p>
           </article>
         </div>
 
-        <div class="stats reveal">
-          <div><span>12+</span><p>лет<br />практики</p></div>
-          <div><span>300+</span><p>консультаций</p></div>
-          <div><span>⚖</span><p>суды и<br />переговоры</p></div>
+        <div class="process reveal">
+          <p class="eyebrow">Как мы работаем</p>
+          <div class="process-grid">
+            <article>
+              <span>01</span>
+              <i data-lucide="search" aria-hidden="true"></i>
+              <h3>Осмотр</h3>
+              <p>Проверяем кузов, салон и ваши пожелания.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <i data-lucide="clipboard-list" aria-hidden="true"></i>
+              <h3>Подбор решения</h3>
+              <p>Собираем комплекс услуг и материалов.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <h3>Работа</h3>
+              <p>Выполняем услуги с контролем качества.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <i data-lucide="car-front" aria-hidden="true"></i>
+              <h3>Выдача авто</h3>
+              <p>Передаем машину и даем рекомендации.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section-shell" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-media section-media-top" data-parallax data-speed="-0.07">
+          <img src="vip-assets/vip-reviews.png" alt="Отзывы клиентов VIP Detailing" />
         </div>
 
-        <div class="section-title inverse contact-title reveal" id="contacts">
-          <h2>Опишите вашу ситуацию</h2>
-          <span></span>
+        <div class="section-heading reveal">
+          <span class="section-number">04</span>
+          <div>
+            <p class="eyebrow">Отзывы клиентов</p>
+            <h2 id="reviews-title">Доверие, которое мы ценим</h2>
+            <p>Каждый отзыв - подтверждение нашего подхода, качества услуг и отношения к автомобилю.</p>
+          </div>
         </div>
 
-        <div class="contact-grid">
-          <form class="contact-form reveal" data-contact-form>
-            <input type="text" name="name" placeholder="Имя" required />
-            <input type="tel" name="phone" placeholder="Телефон" required />
-            <textarea name="message" rows="4" placeholder="Кратко о ситуации"></textarea>
-            <button class="btn btn-primary" type="submit">Отправить заявку</button>
-            <p>Ваши данные защищены и не передаются третьим лицам</p>
-          </form>
-
-          <aside class="quick-contact reveal">
-            <h3>Быстрый способ связи</h3>
-            <a class="contact-link whatsapp" href="https://wa.me/74951234567" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="contact-link telegram" href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
-            <a class="contact-link phone" href="tel:+74951234567">
-              +7 (495) 123-45-67
-              <small>Ежедневно с 10:00 до 20:00</small>
-            </a>
-            <p>Отвечаю лично. Конфиденциально.</p>
-          </aside>
+        <div class="chat-grid">
+          <article class="chat-card reveal">
+            <div class="chat-top">
+              <span>Александр</span>
+              <small>был недавно</small>
+              <i data-lucide="send" aria-hidden="true"></i>
+            </div>
+            <p class="bubble incoming">Вчера забрал автомобиль после керамики. Результат превзошел ожидания - блеск просто невероятный.</p>
+            <p class="bubble outgoing">Спасибо за доверие. Рады, что результат порадовал.</p>
+            <p class="bubble incoming">Отдельное спасибо за рекомендации по уходу. Машина как новая.</p>
+          </article>
+          <article class="chat-card reveal">
+            <div class="chat-top">
+              <span>Игорь</span>
+              <small>был недавно</small>
+              <i data-lucide="send" aria-hidden="true"></i>
+            </div>
+            <p class="bubble incoming">Хочу поблагодарить за химчистку салона. Все идеально чисто, никакой запаха, как будто машина новая.</p>
+            <p class="bubble outgoing">Спасибо за теплые слова. Приезжайте еще.</p>
+            <p class="bubble incoming">Пятна с потолка ушли полностью. Вы настоящие профессионалы.</p>
+          </article>
+          <article class="chat-card reveal">
+            <div class="chat-top">
+              <span>Дмитрий</span>
+              <small>был недавно</small>
+              <i data-lucide="send" aria-hidden="true"></i>
+            </div>
+            <p class="bubble incoming">Делал полировку кузова и защитное покрытие. Цвет заиграл по-новому, отражение как в зеркале.</p>
+            <p class="bubble outgoing">Благодарим за отзыв. Ждем вас снова.</p>
+            <p class="bubble incoming">В следующий раз только к вам.</p>
+          </article>
         </div>
+
+        <div class="review-stats reveal">
+          <div>
+            <i data-lucide="star" aria-hidden="true"></i>
+            <strong>4.9/5</strong>
+            <span>Средняя оценка клиентов</span>
+          </div>
+          <div>
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            <strong>500+</strong>
+            <span>Реальных отзывов</span>
+          </div>
+          <div>
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            <strong>Репутация</strong>
+            <span>Проверенная временем</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking section-shell" id="booking" aria-labelledby="booking-title">
+        <div class="ambient-image booking-image" data-parallax data-speed="-0.12"></div>
+        <div class="booking-copy reveal">
+          <span class="section-number">05</span>
+          <p class="eyebrow">Запишитесь на услугу</p>
+          <h2 id="booking-title">Запишитесь на услугу в несколько кликов</h2>
+          <p>Оставьте заявку, и менеджер свяжется с вами для подтверждения записи в течение нескольких минут.</p>
+        </div>
+
+        <form class="booking-form glass-card reveal" data-booking-form>
+          <div class="form-row">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text" name="name" placeholder="Введите ваше имя" required />
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+            </label>
+          </div>
+          <label>
+            <span>Марка и модель авто</span>
+            <input type="text" name="car" placeholder="Например, BMW X5, Mercedes-Benz S-Class" />
+          </label>
+          <div class="form-row">
+            <label>
+              <span>Выберите услугу</span>
+              <select name="service">
+                <option>Мойка и уход</option>
+                <option>Полировка кузова</option>
+                <option>Керамическое покрытие</option>
+                <option>PPF защита</option>
+                <option>Химчистка салона</option>
+              </select>
+            </label>
+            <label>
+              <span>Удобная дата</span>
+              <input type="date" name="date" />
+            </label>
+          </div>
+          <label>
+            <span>Комментарий</span>
+            <textarea name="comment" rows="4" placeholder="Расскажите о пожеланиях или особенностях автомобиля"></textarea>
+          </label>
+          <button class="btn btn-primary magnetic" type="submit" data-magnetic>
+            Отправить заявку
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <div class="trust-row reveal">
+          <span><i data-lucide="shield-check" aria-hidden="true"></i>Гарантия качества</span>
+          <span><i data-lucide="gem" aria-hidden="true"></i>Премиальные материалы</span>
+          <span><i data-lucide="clock" aria-hidden="true"></i>Точно в срок</span>
+          <span><i data-lucide="users-round" aria-hidden="true"></i>5000+ клиентов</span>
+        </div>
+      </section>
+
+      <section class="contacts section-shell" id="contacts" aria-labelledby="contacts-title">
+        <div class="ambient-image contacts-image" data-parallax data-speed="-0.1"></div>
+
+        <div class="contacts-grid">
+          <div class="contacts-copy reveal">
+            <span class="section-number">06</span>
+            <p class="eyebrow">Контакты</p>
+            <h2 id="contacts-title">Мы рядом</h2>
+            <p>Наш центр находится в сердце Москва-Сити. Будем рады видеть вас каждый день.</p>
+
+            <div class="contact-list">
+              <article>
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+                <div>
+                  <span>Город</span>
+                  <strong>Москва</strong>
+                </div>
+              </article>
+              <article>
+                <i data-lucide="building-2" aria-hidden="true"></i>
+                <div>
+                  <span>Адрес</span>
+                  <strong>Пресненская набережная, 12</strong>
+                  <small>Москва-Сити, Башня Федерация, этаж -1</small>
+                </div>
+              </article>
+              <article>
+                <i data-lucide="clock" aria-hidden="true"></i>
+                <div>
+                  <span>Режим работы</span>
+                  <strong>Ежедневно 9:00 - 21:00</strong>
+                  <small>Без выходных</small>
+                </div>
+              </article>
+              <article>
+                <i data-lucide="phone" aria-hidden="true"></i>
+                <div>
+                  <span>Телефон</span>
+                  <strong><a href="tel:+74951234567">+7 (495) 123-45-67</a></strong>
+                  <small>Ответим на все вопросы</small>
+                </div>
+              </article>
+            </div>
+
+            <div class="messenger-row">
+              <a class="messenger-btn magnetic" href="https://t.me/" target="_blank" rel="noreferrer" data-magnetic>
+                <i data-lucide="send" aria-hidden="true"></i>
+                <span>Написать в Telegram<small>Быстрый ответ</small></span>
+              </a>
+              <a class="messenger-btn magnetic" href="https://wa.me/74951234567" target="_blank" rel="noreferrer" data-magnetic>
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                <span>Написать в WhatsApp<small>Удобно и быстро</small></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-panel reveal">
+            <img src="vip-assets/vip-contacts.png" alt="Карта и район Москва-Сити рядом с VIP Detailing" />
+            <div class="map-pin">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <strong>VIP Detailing</strong>
+              <span>Москва-Сити, -1 этаж</span>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <span>© 2026 VIP Detailing. Все права защищены.</span>
+          <a href="#top" data-scroll-target>Наверх</a>
+        </footer>
       </section>
     </main>
 
-    <div class="modal" data-modal aria-hidden="true">
+    <div class="floating-dock" role="navigation" aria-label="Быстрые действия">
+      <a class="dock-link" href="tel:+74951234567" aria-label="Позвонить">
+        <i data-lucide="phone" aria-hidden="true"></i>
+      </a>
+      <a class="dock-link" href="https://wa.me/74951234567" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+      </a>
+      <button class="dock-link" type="button" data-modal-open aria-label="Открыть форму записи">
+        <i data-lucide="calendar-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="modal" data-modal hidden>
       <div class="modal-backdrop" data-modal-close></div>
-      <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <button class="modal-close" type="button" data-modal-close aria-label="Закрыть форму">×</button>
-        <p class="modal-kicker">Запись на консультацию</p>
-        <h2 id="modal-title">Оставьте контакты, и вам перезвонят</h2>
-        <p class="modal-note">Обычно отвечаю лично в течение рабочего дня. Данные остаются конфиденциальными.</p>
-        <form class="modal-form" data-modal-form>
-          <input type="text" name="modal-name" placeholder="Имя" required />
-          <input type="tel" name="modal-phone" placeholder="Телефон" required />
-          <textarea name="modal-message" rows="4" placeholder="Кратко опишите ситуацию"></textarea>
-          <button class="btn btn-primary" type="submit">Записаться на консультацию</button>
+      <section class="modal-dialog glass-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-modal-close aria-label="Закрыть форму">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+        <p class="eyebrow">Онлайн-запись</p>
+        <h2 id="modal-title">Оставьте контакты, и мы подберем услугу</h2>
+        <p>Ответим в ближайшее время, уточним автомобиль, задачу и удобное время приезда.</p>
+        <form class="modal-form" data-booking-form>
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <textarea name="message" rows="4" placeholder="Какая услуга интересует?"></textarea>
+          <button class="btn btn-primary magnetic" type="submit" data-magnetic>
+            Записаться
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </button>
         </form>
       </section>
     </div>
 
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
