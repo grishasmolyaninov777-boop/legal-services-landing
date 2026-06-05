@@ -143,12 +143,14 @@ textarea {
 
 .hero {
   position: relative;
-  min-height: 690px;
+  min-height: 760px;
   overflow: hidden;
   color: #ffffff;
   background:
-    radial-gradient(circle at 80% 18%, rgba(197, 154, 69, 0.2), transparent 28%),
-    linear-gradient(90deg, #050606 0%, #050606 42%, rgba(5, 6, 6, 0.9) 53%, rgba(5, 6, 6, 0.76) 100%);
+    linear-gradient(90deg, rgba(5, 6, 6, 0.98) 0%, rgba(5, 6, 6, 0.92) 36%, rgba(5, 6, 6, 0.5) 58%, rgba(5, 6, 6, 0.04) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.22)),
+    url("legal-assets/hero-contract-scales.jpg") center center / cover no-repeat,
+    #050606;
 }
 
 .hero::before {
@@ -157,7 +159,7 @@ textarea {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(5, 6, 6, 0.98) 0%, rgba(5, 6, 6, 0.93) 39%, rgba(5, 6, 6, 0.34) 67%, rgba(5, 6, 6, 0.02) 100%),
+    linear-gradient(90deg, rgba(5, 6, 6, 0.92) 0%, rgba(5, 6, 6, 0.72) 36%, rgba(5, 6, 6, 0.1) 70%, rgba(5, 6, 6, 0) 100%),
     linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.1));
   pointer-events: none;
 }
@@ -166,34 +168,7 @@ textarea {
   position: relative;
   z-index: 3;
   width: min(720px, calc(100% - 40px));
-  padding: 174px 0 76px clamp(28px, 4vw, 50px);
-}
-
-.hero-scene {
-  position: absolute;
-  z-index: 0;
-  top: 86px;
-  right: 0;
-  bottom: 0;
-  width: min(63vw, 780px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 100%);
-  pointer-events: none;
-}
-
-.hero-scene img {
-  display: block;
-  width: auto;
-  height: 100%;
-  max-width: none;
-  object-fit: contain;
-  object-position: right center;
-  filter: saturate(1.04) contrast(1.05);
-  transform-origin: center;
-  animation: heroImageFloat 5.6s ease-in-out infinite;
+  padding: 156px 0 58px clamp(28px, 4vw, 50px);
 }
 
 .hero h1,
@@ -221,6 +196,77 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.hero-callback {
+  display: grid;
+  width: min(100%, 670px);
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid rgba(197, 154, 69, 0.46);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(197, 154, 69, 0.18), transparent 34%),
+    rgba(8, 8, 8, 0.62);
+  box-shadow: 0 22px 56px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(12px);
+}
+
+.hero-callback div {
+  align-self: center;
+  grid-column: 1 / -1;
+}
+
+.hero-callback strong {
+  display: block;
+  color: var(--gold-2);
+  font-family: var(--serif);
+  font-size: 27px;
+  line-height: 1;
+}
+
+.hero-callback span {
+  display: block;
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.hero-callback label span {
+  margin: 0 0 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.hero-callback input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.055);
+  outline: none;
+}
+
+.hero-callback input::placeholder {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.hero-callback input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(197, 154, 69, 0.12);
+}
+
+.btn-callback {
+  min-height: 44px;
+  padding: 0 18px;
+  color: #16100a;
+  background: linear-gradient(180deg, #edd08a, #c79a45);
 }
 
 .btn {
@@ -898,16 +944,6 @@ textarea {
   }
 }
 
-@keyframes heroImageFloat {
-  0%,
-  100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-8px) scale(1.012);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -966,18 +1002,19 @@ textarea {
 
   .hero {
     min-height: 720px;
+    background-position: 58% center;
   }
 
   .hero-copy {
     padding-top: 132px;
   }
 
-  .hero-scene {
-    top: auto;
-    right: -40px;
-    bottom: 18px;
-    width: min(88vw, 620px);
-    opacity: 0.72;
+  .hero-callback {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-callback div {
+    grid-column: 1 / -1;
   }
 
   .practice-grid,
@@ -1004,6 +1041,7 @@ textarea {
 
   .hero {
     min-height: 780px;
+    background-position: 63% center;
   }
 
   .hero::before {
@@ -1027,6 +1065,7 @@ textarea {
 
   .hero-actions,
   .hero-actions .btn,
+  .hero-callback,
   .practice-grid,
   .case-grid,
   .price-grid,
@@ -1036,11 +1075,9 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .hero-scene {
-    right: -64px;
-    bottom: 18px;
-    width: 118vw;
-    opacity: 0.62;
+  .hero-callback {
+    padding: 14px;
+    gap: 10px;
   }
 
   .section-title h2 {

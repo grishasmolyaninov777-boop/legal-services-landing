@@ -2,6 +2,7 @@ const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelectorAll(".main-nav a");
 const contactForm = document.querySelector("[data-contact-form]");
+const heroForm = document.querySelector("[data-hero-form]");
 const modal = document.querySelector("[data-modal]");
 const modalOpeners = document.querySelectorAll("[data-modal-open]");
 const modalClosers = document.querySelectorAll("[data-modal-close]");
@@ -70,6 +71,11 @@ const markSubmitted = (form, text) => {
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
   markSubmitted(contactForm, "Заявка отправлена");
+});
+
+heroForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  markSubmitted(heroForm, "Скоро перезвоним");
 });
 
 modalForm?.addEventListener("submit", (event) => {
